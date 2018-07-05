@@ -2,7 +2,6 @@
 
 namespace GeTui\Notification;
 
-
 use GeTui\Notification\Igetui\Reqs\SingleBatchItem;
 use GeTui\Notification\Igetui\Reqs\SingleBatchRequest;
 use GeTui\Notification\Igetui\Utils\GTConfig;
