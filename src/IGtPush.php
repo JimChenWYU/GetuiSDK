@@ -348,6 +348,11 @@ Class IGtPush
                 $params["tagList"] = $message->get_tagList();
             } else {
                 $conditions = $message->get_conditions();
+                /**
+                 * Bugfix
+                 * @link https://github.com/JimChenWYU/GetuiSDK/issues/1
+                 */
+                $conditions = $conditions->getCondition();
                 foreach ($conditions as $condition) {
                     if(AppConditions::PHONE_TYPE == $condition["key"]) {
                         $params["phoneTypeList"] = $condition["values"];
